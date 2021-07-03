@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG",
+    "sources": [
+        "main.scss",
+        "base/_common.scss",
+        "base/_container.scss",
+        "utiles/_variables.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
