@@ -10,8 +10,24 @@
 
     &____item {
 
-    }
 
+        &__item--line {
+            border-left:  1px solid #B9B9B9;
+            padding: 0;
+        }
+    }
+    
+    
+    &__link {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.23;
+     
+        text-align: center;
+        letter-spacing: 0.08em;
+
+        color: #111518;
+    }
     &__icon {
 
     }
@@ -21,6 +37,14 @@
     }
 
     &__txt {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 2;
+
+        display: flex;
+        align-items: center;
+
+        color: #B9B9B9;
 
     }
 }

@@ -3,10 +3,28 @@
 
 .contacts-cont {
 
-        &__title{}
-        &__color {}
+        &__title{
+            font-weight: 800;
+            font-size: 46px;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: 0.03em;
+
+            color: #FFFFFF;
+        }
+        &__color {
+            color: #FF6B09;
+        }
         &__form {}
-        &__heading{}
+        &__heading{
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 1.23;
+            text-align: center;
+            letter-spacing: 0.08em;
+
+            color: #FFFFFF;
+        }
         &__field{}
         &__input {} 
         &__btn {}
