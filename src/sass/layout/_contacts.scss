@@ -3,18 +3,18 @@
     padding-top: 136.04px;
     padding-bottom: 19.82px;
     background: #111518;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-    url(../../images/contacts/contacts-pc.jpg);
-
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)),
+    url(../images/contacts/contacts-pc.jpg);
 }
 
 .contacts-cont {
+        display: flex;
 
         &__title{
             font-weight: 800;
@@ -28,7 +28,9 @@
         &__color {
             color: #FF6B09;
         }
-        &__form {}
+        &__form {
+            display: flex;
+        }
         &__heading{
             font-weight: 600;
             font-size: 30px;
@@ -38,9 +40,19 @@
 
             color: #FFFFFF;
         }
-        &__field{}
-        &__input {} 
-        &__btn {}
+        
+        &__input {
+            padding-left: 40px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.08em;
+
+            color: #FFFFFF;
+        } 
+        
 
 
 }
