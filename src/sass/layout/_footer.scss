@@ -1,18 +1,18 @@
-.footer{
+// .footer{
 
-}
+// }
 .footer-cont{
 
 
-    &__list {
+    // &__list {
 
-    }
+    // }
 
     &____item {
 
 
         &__item--line {
-            border-left:  1px solid #B9B9B9;
+            border-left:  1px solid var(--secondary-text-color);
             padding: 0;
         }
     }
@@ -28,11 +28,12 @@
 
         color: #111518;
     }
-    &__icon {
+    // &__icon {
 
-    }
+    // }
 
     &__basement {
+        background-color: var(--secondary-background-color);
 
     }
 
@@ -44,7 +45,7 @@
         display: flex;
         align-items: center;
 
-        color: #B9B9B9;
+        color: var(--secondary-text-color);
 
     }
 }
