@@ -1,33 +1,80 @@
 
-.contacts {}
+.contacts {
 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(17, 21, 24, 1);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/contacts/contacts-mob.jpg);
+
+}
 .contacts-cont {
+    display: flex;
+    flex-direction: column;
 
         &__title{
             font-weight: 800;
-            font-size: 46px;
+            font-size: 14px;
             line-height: 130%;
             text-align: center;
             letter-spacing: 0.03em;
 
-            color: #FFFFFF;
+            color: var(--White-color);
         }
         &__color {
-            color: #FF6B09;
+            color: var(--Accent-color);
         }
-        &__form {}
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         &__heading{
             font-weight: 600;
-            font-size: 30px;
-            line-height: 1.23;
+            font-size: 12px;
+            line-height: 1.25;
             text-align: center;
             letter-spacing: 0.08em;
 
-            color: #FFFFFF;
+            color: var(--White-color);
+            margin-bottom: 30px;
         }
-        &__field{}
-        &__input {} 
-        &__btn {}
+        &__field{
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+        }
+        &__input {
+            
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.21;
+            width: 280px;
+            height: 48px;
+            padding-left: 28px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.08em;
+            border: 1px solid var(--White-color);
+            box-sizing: border-box;
+            color: var(--White-color);
+        } 
+        &__btn {
+            margin-top: 50px;
+        }
 
 
 }
