@@ -219,6 +219,9 @@ body {
 
 .footer-cont__logo {
   margin-bottom: 20px;
+  width: 84px;
+  height: 30px;
+  display: block;
 }
 
 .footer-cont__list {
@@ -255,6 +258,7 @@ body {
   padding-bottom: 21px;
   margin-left: 52px;
   margin-right: 83px;
+  background-color: var(--secondary-background-color);
 }
 
 .footer-cont__txt {
