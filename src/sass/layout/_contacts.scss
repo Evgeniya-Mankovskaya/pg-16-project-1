@@ -1,35 +1,5 @@
 
 .contacts {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    padding-top: 136.04px;
-    padding-bottom: 19.82px;
-    background: #111518;
-    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-=======
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: rgba(17, 21, 24, 1);
->>>>>>> Stashed changes
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(
-<<<<<<< Updated upstream
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0.25)),
-    url(../images/contacts/contacts-pc.jpg);
-=======
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-    url(../images/contacts/contacts-mob.jpg);
->>>>>>> Stashed changes
-}
-=======
->>>>>>> main
-
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
@@ -47,12 +17,8 @@
 
 }
 .contacts-cont {
-<<<<<<< HEAD
-        display: flex;
-=======
     display: flex;
     flex-direction: column;
->>>>>>> main
 
         &__title{
             font-weight: 800;
@@ -65,28 +31,14 @@
         }
         &__color {
             color: var(--Accent-color);
-<<<<<<< HEAD
         }
-        &__form {
-            display: flex;
-            flex-direction: column;
-        }
-<<<<<<< Updated upstream
-        &__form {
-            display: flex;
-        }
-=======
->>>>>>> Stashed changes
-=======
-        }
-
         &__form {
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
->>>>>>> main
+
         &__heading{
             font-weight: 600;
             font-size: 12px;
@@ -97,18 +49,11 @@
         }
         &__field{
 
-<<<<<<< HEAD
-=======
-            color: var(--White-color);
-            margin-bottom: 30px;
-        }
-        &__field{
->>>>>>> main
 
             &:not(:last-child) {
                 margin-bottom: 20px;
             }
-<<<<<<< HEAD
+
             
         }
         &__input {
@@ -129,25 +74,9 @@
         &__btn {
             margin-top: 50px;
         }
-<<<<<<< Updated upstream
-        
-        &__input {
-            padding-left: 40px;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 1.2;
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.08em;
 
-            color: #FFFFFF;
-        } 
-        
-=======
->>>>>>> Stashed changes
-=======
 
-        }
+        
         &__input {
             
             font-weight: 600;
@@ -166,7 +95,5 @@
         &__btn {
             margin-top: 50px;
         }
->>>>>>> main
+    }
 
-
-}
