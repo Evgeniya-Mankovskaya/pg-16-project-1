@@ -1,33 +1,59 @@
 <header class="header">
-    <nav>
-        <a class="logo" href="./index.html">
-            <span class="logo_bold">Hell</span> <span class="logo_bold">EN</span> <span class="logo_orange">hellish</span> <span class="logo__span">english</span>
+    <nav class="desktop-menu section">
+        <a class="desktop-menu__logo" href="#">
+            <img src="./images/logo/logo-black-pc.svg" width="128px" height="45px">
         </a>
 
-        <ul class="site-nav">
+        <!-- <button type="button" class="header__mobile-menu-btn">
+            <svg class="header__mobile-menu-icon">
+               
+            </svg>
+        </button> -->
+
+            <ul class="site-nav">
             <li class="site-nav__item">
-                <a class="site-nav__link" href="#">Studying program</a>
+                <a class="site-nav__link link" href="#">Studying program</a>
             </li>
             <li class="site-nav__item">
-                <a class="site-nav__link" href="#">About</a>
+                <a class="site-nav__link link" href="#">About</a>
             </li>
             <li class="site-nav__item">
-                <a class="site-nav__link" href="#">Training options</a>
+                <a class="site-nav__link link" href="#">Training options</a>
             </li>
             <li class="site-nav__item">
-                <a class="site-nav__link" href="#">Contacts</a>
+                <a class="site-nav__link link" href="#">Contacts</a>
             </li>
         </ul>
-
-        <button class="header__button">consultation by phone</button>
+        <button class="desktop-menu__button">consultation by phone</button>
      </nav>
+     
 
-    <section class="hero">
-        <h1 class="hero__title">Complex <br> preparation for <br> English UPE</h1>
-        
-        <p class="hero__text">It won’t be easy. <br>
-            <span class="hero__text_bold">But you are guaranteed to get</span><span class="hero__text_orange">+25 points</span></p>
+     <!-- mobile menu -->
+        <div class="mobile-menu">
+            <div class="cection">
+            <nav>
+                <a class="logo" href="#">
+                    <img src="./images/logo/logo-white-mob.svg" width="128px" height="45px">
+                </a>
+               <div class="mobile-menu__thumb">
+                <ul class="site-nav">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link link" href="#">Studying program</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link  link" href="#">About</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link  link" href="#">Training options</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link  link" href="#">Contacts</a>
+                    </li>
+                </ul>
+               </div>
+            </nav>
+            <button class="mobile-menu__button">consultation by phone</button>
+            </div>
+        </div>
 
-        <button class="hero__button">i want a free lesson </button>
-    </section>
 </header>
