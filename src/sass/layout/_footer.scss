@@ -1,58 +1,85 @@
-.footer {
-  background-color: var(--White-color);
-}
-.footer-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+<<<<<<< HEAD
+// .footer{
 
-  &__logo {
-    margin-bottom: 20px;
-  }
-  &__list {
+// }
+.footer-cont{
+
+
+    // &__list {
+
+    // }
+
+    &____item {
+
+
+        &__item--line {
+            border-left:  1px solid var(--secondary-text-color);
+            padding: 0;
+=======
+.footer{
+    background-color: var(--White-color);
+}
+.footer-cont{
     display: flex;
     flex-direction: column;
-  }
-
-  &____item {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &__link {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-
-    text-align: center;
-    letter-spacing: 0.08em;
-
-    color: var(--primary-text-color);
-  }
-  // &__icon {
-
-  // }
-
-  &__basement {
-    display: flex;
     justify-content: center;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    margin-left: 52px;
-    margin-right: 83px;
-  }
+    padding-top: 30px;
+    padding-bottom: 30px;
 
-  &__txt {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 2;
+    &__logo{
+        margin-bottom: 20px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
 
-    display: flex;
-    align-items: center;
+    &____item {
 
-    color: var(--secondary-text-color);
-  }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+>>>>>>> main
+        }
+    }
+    
+    &__link {
+       
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+     
+        text-align: center;
+        letter-spacing: 0.08em;
+
+        color: var(--primary-text-color);
+    }
+    // &__icon {
+
+    // }
+
+    &__basement {
+<<<<<<< HEAD
+        background-color: var(--secondary-background-color);
+
+=======
+        display: flex;
+        justify-content: center;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        margin-left:52px;
+        margin-right: 83px;
+>>>>>>> main
+    }
+
+    &__txt {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 2;
+
+        display: flex;
+        align-items: center;
+
+        color: var(--secondary-text-color);
+
+    }
 }
