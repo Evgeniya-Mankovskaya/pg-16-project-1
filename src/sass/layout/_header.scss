@@ -4,6 +4,8 @@
     }
 
     .mobile-menu {
+        display: none;
+        opacity: 0;
         display: flex;
         position: fixed;
         top: 0;
@@ -18,6 +20,13 @@
         padding-top: 30px;
         padding-left: 20px;
         padding-right: 20px;    
+
+        &.is-open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            // display: none;
+          }
 }
 
     .site-nav__item {
@@ -81,7 +90,7 @@
     }
     }
 
-    @media screen and (min-width: 688px) {
+    @media screen and (min-width: 768px) {
         .logo {
             width: 128px;
             height: 45px;
@@ -150,10 +159,6 @@
             &__item:not(:first-child) {
                 margin-left: 40px;
             }
-
-            // &__item:last-child {
-            //     margin-right: 60px;
-            // }
             
             &__link {
                 font-weight: bold;
@@ -176,6 +181,10 @@
                 display: none;
             }  
         }
+
+@media screen and (max-width: 1313px) {
+    
+}
 
 
     
