@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+// .footer{
+
+// }
+.footer-cont{
+
+
+    // &__list {
+
+    // }
+
+    &____item {
+
+
+        &__item--line {
+            border-left:  1px solid var(--secondary-text-color);
+            padding: 0;
+=======
 .footer{
     background-color: var(--White-color);
 }
@@ -20,6 +38,7 @@
 
         &:not(:last-child) {
             margin-bottom: 30px;
+>>>>>>> main
         }
     }
     
@@ -39,12 +58,17 @@
     // }
 
     &__basement {
+<<<<<<< HEAD
+        background-color: var(--secondary-background-color);
+
+=======
         display: flex;
         justify-content: center;
         padding-top: 21px;
         padding-bottom: 21px;
         margin-left:52px;
         margin-right: 83px;
+>>>>>>> main
     }
 
     &__txt {
