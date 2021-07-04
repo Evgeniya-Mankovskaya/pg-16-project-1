@@ -2,61 +2,122 @@
     background-color: var(--White-color);
 }
 .footer-cont{
+    
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 30px;
+    align-items: center;
+    padding-top: 40px;
     padding-bottom: 30px;
 
     &__logo{
+        display: inline-block;
         margin-bottom: 20px;
     }
     &__list {
+       
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    &____item {
-
+    &__item {
+        display: flex;
+       
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
     }
-    
-    &__link {
-       
+    &__link-tel {
+        
+        align-items: center;
+        display: flex;
         font-weight: 600;
         font-size: 14px;
         line-height: 1.21;
-     
+        cursor: pointer;
         text-align: center;
         letter-spacing: 0.08em;
 
         color: var(--primary-text-color);
     }
-    // &__icon {
+    &__icon-tel {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
 
-    // }
+    }
 
-    &__basement {
+    &__link {
         display: flex;
-        justify-content: center;
+
+        
+    }
+   
+}
+
+    .footer-basement {
+        display: flex;
+        justify-content: flex-start;
         padding-top: 21px;
         padding-bottom: 21px;
-        margin-left:52px;
-        margin-right: 83px;
-        background-color: var(--secondary-background-color);
+        
+        background-color: var(--secondary-background-color); 
+        
+        &__txt {
+                display: inline-block;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 2;
+
+                // display: flex;
+                // align-items: center;
+
+                color: var(--secondary-text-color);
+
     }
-
-    &__txt {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 2;
-
+    }
+        .footer-cont-basement{
+            margin: 0 auto;
+      
+}
+@media screen and (min-width: 768px){
+    .footer-cont{
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+        &__list {
+            
+            display: flex;
+            flex-direction: row;
+            
+            align-content: center;
+            } 
+            &__logo{
+                margin-bottom: 0;  }
+                &__link-tel {
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        right: -24px;
+                        height: 40px;
+                        border-right: 1px solid var(--secondary-text-color);
+                    }
+                   
+                    }
+            &__item {
 
-        color: var(--secondary-text-color);
+               
 
-    }
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                    margin-right: 48px;
+                }
+}}
 }
