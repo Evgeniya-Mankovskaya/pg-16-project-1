@@ -21,6 +21,8 @@
     url(../images/contacts/contacts-mob.jpg);
 
     &__title{
+        display: inline-block;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
@@ -43,6 +45,7 @@
     }
 
     &__heading{
+        display: inline-block;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
@@ -155,6 +158,7 @@
     url(../images/contacts/contacts-pc.jpg);
     &__title{
         
+        
         font-size: 46px;
         
     }
@@ -172,6 +176,10 @@
             height: 68px;
             font-size: 20px;
             line-height: 1.2;
+        }
+        &__heading {
+            font-size: 30px;
+            line-height: 1.23;
         }
 }}
 
