@@ -47,7 +47,7 @@
     }
 
 .header {
-    max-width: 280px;
+    min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 20px 0 20px;
@@ -69,7 +69,6 @@
 
 @media screen and (min-width: 768px) {
     .header {
-        max-width: 688px;
         padding: 41px 40px 0 40px;
         margin-right: auto;
         margin-left: auto;
@@ -208,6 +207,19 @@
             .mobile-menu {
                 display: none;
             }  
+        }
+
+        .mobile-menu {
+            &__close-btn {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            }
+
+            &__close-icon {
+                width: 18px;
+                height: 18px;
+            }
         }
 
 // NOBILE MENU
