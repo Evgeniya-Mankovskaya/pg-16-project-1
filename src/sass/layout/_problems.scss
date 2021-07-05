@@ -1,5 +1,7 @@
 .problems {
-	@media screen and (max-width: 767px) {
+	position: relative;
+	z-index: 99;
+	@media screen and (min-width:280px) {
 		padding-top: 25px;
 		background-image: linear-gradient(
 			to bottom,
@@ -12,36 +14,66 @@
 		background-image: linear-gradient(
 			to bottom,
 			var(--secondary-background-color) 340px,
-			var(--White-color) 152px
-		 );
+			var(--White-color) 152px);
 	 }
-	 @media screen and (min-width: 1366px) {
-		//  max-width: 1314;
+	 @media screen and (min-width: 1344px) {
 		padding-top: 100px;
 		background-image: linear-gradient(
 			to bottom,
 			var(--secondary-background-color) 560px,
-			var(--White-color) 150px);
-
-	
+			var(--White-color) 150px),
+			
 	 }
-	//  .problems__icon{
-	//  }
+}
+.problems__icon{
+	@media screen and (max-width: 1343px) {
+		display: none;
+	 }
+	background-image: url('../images/problems/campfire-pc.svg');
+	content: '';
+	position: absolute;
+	top: 115px;
+	right: 0px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 445px;
+	width: 398px;
+	z-index: 0;
 
 
 }
+.containers{
+	width: 100%;
+	@media screen and (min-width: 320px) {
+	  max-width: 480px;
+	  margin: 0 auto;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+	@media screen and (min-width: 768px) {
+	  max-width: 768px;
+	  padding-left: 40px;
+	  padding-right: 40px;
+	}
+	@media screen and (min-width: 1344px) {
+	  max-width: 1344px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+}
 .problems__title {
 	margin-bottom: 25px;
-	max-width: 280px;
+	// max-width: 280px;
 	font-size: 24px;
 	line-height: 1.3;
-	text-align: left;
+	// text-align: left;
 	letter-spacing: 0.03em;
 	color: var(--White-color);
-	@media screen and (min-width: 768px) {
-		max-width: 450px;
+	@media screen and (min-width: 768px) and(max-width:1333px) {
+		width: 450px;
 	 }
-	 @media screen and (min-width: 1366px) {
+	 @media screen and (min-width: 1344px) {
 		 margin-bottom: 70px;
 		 max-width: 866px;
 		 font-size: 46px;
@@ -54,7 +86,7 @@
 	line-height: 1.3;
 	letter-spacing: 0.03em;
 	color: var(--Accent-color);
-	@media screen and (min-width: 1366px) {
+	@media screen and (min-width: 1344px) {
 		max-width: 866px;
 	  font-size: 46px;
 	  line-height: 1.3;
@@ -68,7 +100,7 @@
 	padding-right: 14px;
 	box-shadow: -5px 8px 26px 0px #0000000A;
 	background-color: var(--White-color);
-	@media screen and (min-width: 768px) and (max-width:1365px) {
+	@media screen and (min-width: 768px)  {
 		max-width: 688px;
 		padding-top: 26px;
 		padding-left: 96px;
@@ -76,19 +108,18 @@
 		padding-bottom: 30px;
 		display: flex;
 		flex-wrap: wrap;
-		margin-right: -22px;
 	 }
-	 @media screen and (min-width: 1366px) {
+	 @media screen and (min-width: 1344px) {
+		 position: relative;
 	    max-width: 1314px;
 		 height: 366px;
-		display: inline-flex;
-		flex-wrap: wrap;
-		padding-top: 70px;
-		padding-bottom: 62px;
-		padding-left: 114px;
-		padding-right: 112px;
-		// margin-right: -20px;
-		// margin-left: -20px;
+		 display: inline-flex;
+		 flex-wrap: wrap;
+		 padding-top: 70px;
+		 padding-bottom: 62px;
+		 padding-left: 114px;
+		 padding-right: 112px;
+		 z-index: 99;
 	 }
 }
 .problems__item {
@@ -113,18 +144,14 @@
 		}
 	 }
 
-	@media screen and (min-width: 768px) and (max-width: 1355px) {
+	@media screen and (min-width: 768px)  {
 		width: calc((100% - 2 * 22px) / 2);
 		margin-right: 22px;
 	 }
-	 @media screen and (min-width: 1366px) {
-		// width: calc((100% - 6 * 20px) / 3);
-		// margin-right: 20px;
-		// margin-left: 20px;
-		&:nth-child(3n + 2)  {
-			margin-right: 40px;
-			margin-left: 40px;
-		 }
+	 @media screen and (min-width: 1344px) {
+		width: calc((100% - 6 * 20px) / 3);
+		margin-right: 20px;
+		margin-left: 20px;
 
 		&:nth-child(-n + 3) {
 			margin-bottom: 32px;
@@ -132,7 +159,6 @@
 	 }
 }
 .problems__text {
-	margin: 0;
 	max-width: 236px;
 	margin-top: 5px;
 	font-weight: 700;
@@ -142,10 +168,10 @@
 	text-align: left;
 	color: var(--primary-text-color);
 
-	@media screen and (min-width: 1366px) {
+	@media screen and (min-width: 1344px) {
 		margin-top: 10px;
 		font-size: 20px;
 		line-height: 1.4;
-		min-width: 336px;
+		max-width: 336px;
 	 }
 }
