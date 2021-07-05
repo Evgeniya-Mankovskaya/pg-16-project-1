@@ -78,6 +78,9 @@
     }
 
 @media screen and (min-width: 768px) {
+    .hero-container {
+        max-width: 768px;
+    }
     .hero {
         min-width: 768px;
         // position: absolute;
@@ -109,7 +112,11 @@
 
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1344px) {
+    .hero-container {
+        min-width: 1344px;
+    }
+
     .hero {   
         max-height: 1316px; 
         &__title {
@@ -139,6 +146,7 @@
         }  
         
         &__button {
+            padding: 27px 70px 26px 70px;
             margin-bottom: 182px;
         }
     }
