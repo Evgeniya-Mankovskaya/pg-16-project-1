@@ -68,6 +68,10 @@
 }
 
 @media screen and (min-width: 768px) {
+.header.container {
+    max-width: 768px;
+}
+
     .header {
         padding: 41px 40px 0 40px;
         margin-right: auto;
@@ -123,6 +127,10 @@
     }    
 
     @media screen and (min-width: 1344px) { 
+        .header.container {
+            min-width: 1344px;
+        }
+
         .header {
             padding: 0;
             max-width: 1316px;
