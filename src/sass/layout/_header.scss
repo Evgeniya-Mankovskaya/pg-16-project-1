@@ -47,7 +47,7 @@
     }
 
 .header {
-    max-width: 280px;
+    min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 20px 0 20px;
@@ -67,31 +67,18 @@
     justify-content: space-between;
 }
 
-    // .logo-mob {
-    //     margin-top: 40px;
-    //     margin-bottom: 50px;
-       
-    //     &__text_up {
-    //         color: var(--White-color);
-    //         margin-right: 4px;
-    //         font-size: 26px;
-    //         line-height: 1.23;
-    //     }
-    //     &__text {
-    //         &_black {
-    //             color: var(--White-color);
-    //         }
-    //     }
-    //     &__text_white {
-    //         color: var(--White-color);
-    //     }  
-    // }  
-
-
+@media screen and (max-width: 767px) {
+    .header.container {
+        max-width: 320px;
+    }
+}
 
 @media screen and (min-width: 768px) {
+.header.container {
+    max-width: 768px;
+}
+
     .header {
-        max-width: 688px;
         padding: 41px 40px 0 40px;
         margin-right: auto;
         margin-left: auto;
@@ -146,6 +133,10 @@
     }    
 
     @media screen and (min-width: 1344px) { 
+        .header.container {
+            min-width: 1344px;
+        }
+
         .header {
             padding: 0;
             max-width: 1316px;
@@ -230,6 +221,19 @@
             .mobile-menu {
                 display: none;
             }  
+        }
+
+        .mobile-menu {
+            &__close-btn {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            }
+
+            &__close-icon {
+                width: 18px;
+                height: 18px;
+            }
         }
 
 // NOBILE MENU
@@ -384,5 +388,3 @@
 //             margin-top: 30px;
 //             margin-bottom: 50px;
 //         }  
-
-   

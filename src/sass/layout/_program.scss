@@ -1,0 +1,127 @@
+.program {
+  padding: 50px 0 537px;
+
+  background-color: var(--secondary-background-color);
+
+  &__title {
+    margin-bottom: 43px;
+
+    font-weight: inherit;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--White-color);
+  }
+
+  &__semesters-list {
+    padding-left: 120px;
+    position: relative;
+  }
+
+  &__semesters-item:not(:last-child) {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -26px;
+      top: 20px;
+      width: 1px;
+      bottom: -50px;
+      border-left: 1px solid var(--White-color);
+    }
+  }
+
+  &__semesters-label {
+    margin-bottom: 11px;
+    position: relative;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--White-color);
+
+    &::before {
+      //Radius of list decoration element
+      $decor-radius: 12px;
+
+      content: '';
+      position: absolute;
+      left: -20px - $decor-radius;
+      top: 50%;
+      width: $decor-radius;
+      height: $decor-radius;
+
+      background-color: var(--Accent-color);
+      border-radius: 50%;
+
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__skills-item {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  //Clear margin-bottom in the lastest list item
+  &__skills-item:last-child.program__skills-item_last {
+    margin-bottom: 0;
+    position: relative;
+
+    &:after {
+      display: block;
+      width: 120px;
+      height: 137px;
+      content: url('../images/program/program-mob.jpg');
+      position: absolute;
+      left: 80px;
+      top: 30px;
+      background-size: 120px 137px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      opacity: 0.5;
+    }
+  }
+
+  &__skills-label {
+    margin-bottom: 11px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 164.9%;
+    letter-spacing: 0.08em;
+    color: var(--Accent-color);
+  }
+
+  &__topics-description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
+    color: var(--secondary-text-color);
+    opacity: 0.5;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .program__skills-item:last-child.program__skills-item_last:after {
+    content: url('../images/program/program-mob@2x.jpg');
+    display: block;
+    width: 120px;
+    height: 137px;
+    background-size: 120px 137px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
