@@ -1,5 +1,6 @@
-<header class="header">
+<header class="header container">
     <nav class="desktop-menu section">
+       <div class="header__menu">
         <a class="logo">
             <div class="logo__thumb">
               <span class="logo__text_up">Hell</span>
@@ -11,70 +12,70 @@
              <p class="logo__text"><span class="logo__text_orange">Hellish &nbsp;</span><span class="logo__text_black">english</span></p>
           </a>
 
-            <ul class="site-nav">
-            <li class="site-nav__item">
-                <a class="site-nav__link link" href="#">Studying program</a>
+          <ul class="site-nav-desktop">
+            <li class="site-nav-desktop__item">
+                <a class="site-nav-desktop__link link" href="#">Studying program</a>
             </li>
-            <li class="site-nav__item">
-                <a class="site-nav__link link" href="#">About</a>
+            <li class="site-nav-desktop__item">
+                <a class="site-nav-desktop__link link" href="#">About</a>
             </li>
-            <li class="site-nav__item">
-                <a class="site-nav__link link" href="#">Training options</a>
+            <li class="site-nav-desktop__item">
+                <a class="site-nav-desktop__link link" href="#">Training options</a>
             </li>
-            <li class="site-nav__item">
-                <a class="site-nav__link link" href="#">Contacts</a>
+            <li class="site-nav-desktop__item">
+                <a class="site-nav-desktop__link link" href="#">Contacts</a>
             </li>
-        </ul>
-        <div class="desktop-menu__thumb">
-            <button class="desktop-menu__button">consultation by phone</button>
+            </ul>
 
-        <button type="button" class="header__mobile-menu-btn  is-open" data-menu-button>
-            <svg class="header__mobile-menu-icon">
-                <use href="./images/how-we-do/sprite.svg#icon-burger"></use>
-            </svg> 
-          </button>
-        </div>
+            <div class="desktop-menu__thumb">
+                <button class="desktop-menu__button">consultation by phone</button>
+              <button type="button" class="header__mobile-menu-btn  is-open" data-menu-button>
+                <svg class="header__mobile-menu-icon">
+                    <use href="./images/how-we-do/sprite.svg#icon-burger"></use>
+                </svg> 
+            </button>
+          </div>
+
+       </div>
+       
      </nav>
-     
 
-     <!-- mobile menu -->
-        <!-- <div class="mobile-menu" data-menu>
-            <div class="container mobile-menu__container">
-                <nav>
-                    <a class="logo logo-mob">
-                        <div class="logo__thumb">
-                          <span class="logo-mob__text_up">Hell</span>
-                          <svg class="logo_fire">
-                              <use href="./images/how-we-do/sprite.svg#icon-campfire"></use>
-                          </svg> 
-                              <span class="logo-mob__text_up">EN</span> 
-                        </div>
-                         <p class="logo__text"><span class="logo__text_orange">Hellish &nbsp;</span><span class="logo-mob__text_white">english</span></p>
-                      </a>
-                    <div class="mobile-menu__thumb">
-                    <ul class="site-nav">
-                        <li class="site-nav__item">
-                            <a class="site-nav__link link" href="#">Studying program</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a class="site-nav__link  link" href="#">About</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a class="site-nav__link  link" href="#">Training options</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a class="site-nav__link  link" href="#">Contacts</a>
-                        </li>
-                    </ul>
-                   </div>
-                </nav>
-            </div>     -->
-            <!-- <div class="cection"> -->
-                <!-- <button type="button" class="mobile-menu__close-btn" data-menu-close> -->
-                    <!-- <svg class="mobile-menu__close-icon">
-                      <use href="./images/icons.svg#icon-burger-close"></use>
-                    </svg> -->
-                  <!-- </button> -->
-            <!-- <button class="mobile-menu__button">consultation by phone</button>
-            </div> -->
+
+     <!-- MOBILE MENU -->
+     <div class="mobile-menu" data-menu>
+         <div class="container mobile-menu__container">
+             <button type="button" class="mobile-menu__close-btn" data-menu-close>
+             <svg class="mobile-menu__close-icon">
+                 <use href="./images/how-we-do/sprite.svg#icon-close"></use>
+             </svg>
+            </button>
+            <a class="logo-mobile">
+                <div class="logo">
+                  <span class="logo__text_up">Hell</span>
+                  <svg class="logo_fire">
+                      <use href="./images/how-we-do/sprite.svg#icon-campfire"></use>
+                  </svg> 
+                      <span class="logo__text_up">EN</span> 
+                </div>
+                 <p class="logo__text"><span class="logo__text_orange">Hellish &nbsp;</span><span class="logo__text_black">english</span></p>
+              </a>
+
+              <ul class="site-nav">
+                <li class="site-nav__item">
+                    <a class="site-nav__link link" href="#">Studying program</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link link" href="#">About</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link link" href="#">Training options</a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link link" href="#">Contacts</a>
+                </li>
+            </ul>
+
+            <button class="mobile-menu__button">consultation by phone</button>
+         </div>
+     </div>
 </header>
