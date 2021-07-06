@@ -1,18 +1,45 @@
+.about{
+  @media screen and (min-width: 320px) {
+	 margin-top: 39px;
+  margin-bottom: 50px;
+	}
 
-.container_blok{
-  width: 280px;
-  margin-top: 40px;
-  padding: 0;
-  margin-bottom: 43px;
-  position: static;
+  @media screen and (min-width: 768px) {
+  margin-top: 50px;
+   margin-bottom: 50px;
+   }
+ 
 }
 
+.about__container{
+	width: 100%;
+	@media screen and (min-width: 320px) {
+	  width: 320px;
+	  margin: 0 auto;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  // .about__list{
+  //   @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   }
+  // }
+
+
+}
 .about__blok-section{
+  position: relative;
   width: 300px;
   padding-left: 27px;
   padding-right: 20px;
   margin-top: 20px;
-  
+  margin-bottom: 57px;
 }
 
 .about__text{
@@ -27,8 +54,15 @@ color: #111518;
 }
 
 .about__image{
-  width: 243px;
-}
+  @media screen and (min-width: 320px) {
+width: 243px;
+	}
+  // @media screen and (min-width: 768px) {
+  //   width: 243px;
+  //   }
+  // }
+
+
 
 .about__blok-name{
   font-family: Montserrat;
@@ -39,9 +73,8 @@ line-height: 1.2;
 letter-spacing: 0.08em;
 color: #111518;
 padding-bottom: 10px;
-border-bottom: 1px solid #B9B;
+border-bottom: 1px solid #B9B9B9;
 }
-
 
 .about__blok-list{
   font-family: Montserrat;
@@ -52,17 +85,19 @@ line-height: 1.21;
 letter-spacing: 0.06em;
 color: #111518;
 margin-bottom: 25px;
+position: relative;
 
 &::before{
+  position: absolute;
   content: "";
   width: 18px;
   height: 14px;
-  position: absolute;
-
+  background-image: url('../images/about/check-mark.svg');
+  fill: var(--Accent-color);
+  left: -25px;
+  top: 3px;
 }
 }
-
-
 
 .about__blok-list-teacher{
   font-family: Montserrat;
@@ -72,6 +107,18 @@ font-size: 12px;
 line-height: 2.16;
 color: #B9B9B9;
 margin-bottom: 25px;
+position: relative;
+
+&::before{
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 3px;
+  background-image: url('../images/about/line.svg');
+  fill: var(--Accent-color);
+  left: 0;
+  top: -20px;
+}
 }
 
 .about__blok-list-address{
@@ -83,7 +130,14 @@ line-height: 1.6;
 text-decoration-line: underline;
 color: #FF6B09;
 }
-
 .about__blok{
+@media screen and (min-width: 320px) {
   margin-top: 20px;
+    }
+  
+}
+// @media screen and (min-width: 768px) {
+//   width: 404px;
+//   }
+// }
 }
