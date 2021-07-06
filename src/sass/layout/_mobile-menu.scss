@@ -187,6 +187,8 @@
                     letter-spacing: 0.03em;
                               
                     color: var(--White-color);
+
+                    transition: color var(--animation);
             
                     &:hover,
                     &:focus {

@@ -146,6 +146,10 @@
                         color: var(--secondary-text-color);
                         padding-top: 31px;
                         padding-bottom: 29px;
+
+                        transition: color var(--animation);
+
+                        
         
                         &:hover,
                         &:focus {
