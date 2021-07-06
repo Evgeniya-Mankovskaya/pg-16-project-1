@@ -1,0 +1,126 @@
+.advantages {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	@media screen and (min-width: 768px) {
+		padding-top: 50px;
+	 }
+	 @media screen and (min-width: 1344px) {
+		padding-top: 96px;
+		padding-bottom: 130px;
+	}
+
+}
+// .containers {
+// }
+.advantages__list {
+	text-align: center;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		// justify-content: space-between;
+	 }
+}
+.advantages__item {
+	
+	@media screen and (min-width: 1344px) {
+		flex-basis: calc(100% / 3);
+		text-align: left;
+		position: relative;
+  }
+
+	
+	&:nth-child(1)::before{
+		background-image: url('../images/advantages/advantages-1.svg');
+		margin-right: 10px;
+		margin-bottom: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		content: '';
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 59px;
+		height: 60px;
+		fill: var(--Accent-color);
+		@media screen and (min-width: 768px) {
+			margin-bottom: 0;
+			align-items: center;
+		 }
+		 @media screen and (min-width: 1344px) {
+			 margin-right: 0;
+			 width: 100px;
+			 height: 102px;
+		}
+	}
+
+	&:nth-child(2)::before{
+		background-image: url('../images/advantages/advantages-2.svg');
+		margin-right: 10px;
+		margin-bottom: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		content: '';
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 59px;
+		height: 60px;
+		fill: var(--Accent-color);
+		@media screen and (min-width: 768px) {
+			margin-bottom: 0;
+		 }
+		 @media screen and (min-width: 1344px) {
+			margin-right: 0;
+			width: 100px;
+			height: 102px;
+		}
+	}
+
+	&:nth-child(3)::before{
+		background-image: url('../images/advantages/advantages-3.svg');
+		margin-right: 10px;
+		margin-bottom: px;
+		display: inline-block;
+		// vertical-align: middle;
+		content: '';
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 59px;
+		height: 60px;
+		fill: var(--Accent-color);
+		@media screen and (min-width: 768px) {
+			vertical-align: middle;
+		 }
+		 @media screen and (min-width: 1344px) {
+			margin-right: 0;
+			width: 100px;
+			height: 102px;
+		 }
+	}
+
+
+}
+.advantages__text {
+	 display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.65;
+	letter-spacing: 0.08em;
+	text-align: left;
+	 max-width: 146px;
+	color: var(--primary-text-color);
+	@media screen and (min-width: 768px) {
+		vertical-align: middle;
+	 }
+	 @media screen and (min-width: 1344px) {
+		 display: inline-flex;
+		 position: absolute;
+		 left: 80px;
+		 top: 20px;
+		 align-items: center;
+		 max-width: 300px;
+		 font-size: 20px;
+		 line-height: 1.65;
+
+	}
+
+
+
+}
