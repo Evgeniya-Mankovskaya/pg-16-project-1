@@ -22,11 +22,12 @@
   &__semesters-item:not(:last-child) {
     position: relative;
 
-    &:before {
+    &::before {
       content: '';
       display: block;
       position: absolute;
-      left: -26px;
+      //Distance between text and border is 20px
+      left: -20px - 6px;
       top: 20px;
       width: 1px;
       bottom: -50px;
@@ -47,14 +48,14 @@
 
     &::before {
       //Radius of list decoration element
-      $decor-radius: 12px;
+      $decoration-radius: 12px;
 
       content: '';
       position: absolute;
-      left: -20px - $decor-radius;
+      left: -20px - $decoration-radius;
       top: 50%;
-      width: $decor-radius;
-      height: $decor-radius;
+      width: $decoration-radius;
+      height: $decoration-radius;
 
       background-color: var(--Accent-color);
       border-radius: 50%;
@@ -71,12 +72,12 @@
     }
   }
 
-  //Clear margin-bottom in the lastest list item
   &__skills-item:last-child.program__skills-item_last {
+    //Clear margin-bottom in the lastest list item
     margin-bottom: 0;
     position: relative;
 
-    &:after {
+    &::after {
       display: block;
       width: 120px;
       height: 137px;
@@ -85,9 +86,14 @@
       left: 80px;
       top: 30px;
       background-size: 120px 137px;
-      background-repeat: no-repeat;
 
       opacity: 0.5;
+
+      @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+        (min-resolution: 192dpi) and (max-width: 767px),
+        (min-resolution: 2dppx) and (max-width: 767px) {
+        content: url('../images/program/program-mob@2x.jpg');
+      }
     }
   }
 
@@ -111,15 +117,70 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (max-width: 767px),
-  (min-resolution: 192dpi) and (max-width: 767px),
-  (min-resolution: 2dppx) and (max-width: 767px) {
-  .program__skills-item:last-child.program__skills-item_last:after {
-    content: url('../images/program/program-mob@2x.jpg');
-    display: block;
-    width: 120px;
-    height: 137px;
-    background-size: 120px 137px;
-    background-repeat: no-repeat;
+@media screen and (min-width: 768px) {
+  .program {
+    padding: 60px 0 392px;
+
+    &__title {
+      margin-bottom: 52px;
+
+      font-size: 26px;
+      text-align: start;
+    }
+
+    &__skills-list {
+      display: flex;
+    }
+
+    &__skills-item:nth-child(1) {
+      width: 176px;
+      margin-right: 50px;
+    }
+
+    &__skills-item:nth-child(2) {
+      width: 155px;
+      margin-right: 50px;
+    }
+
+    &__skills-item:nth-child(3) {
+      width: 110px;
+    }
+
+    &__semesters-item:not(:last-child)::before {
+      //Distance between text and border is 50px
+      left: -50px - 6px;
+      bottom: -20px;
+    }
+
+    &__semesters-label::before {
+      //Radius of list decoration element
+      $decoration-radius: 12px;
+
+      left: -50px - $decoration-radius;
+    }
+
+    &__skills-item {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__skills-item:last-child.program__skills-item_last::after {
+      display: block;
+      width: 384px;
+      height: 280px;
+      content: url('../images/program/program-tab.jpg');
+      left: 225px;
+      top: -60px;
+      background-size: 384px 280px;
+
+      @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+        (min-resolution: 192dpi) and (min-width: 768px),
+        (min-resolution: 2dppx) and (min-width: 768px) {
+        content: url('../images/program/program-tab@2x.jpg');
+      }
+    }
   }
 }
