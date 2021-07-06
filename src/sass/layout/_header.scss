@@ -159,3 +159,108 @@
                 }
 }
 
+// BACKDROP
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-background-color);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    overflow-y: scroll;
+    opacity: 1;
+    transition: opacity var(--animation);
+
+        &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+
+            .modal {
+                display: none;
+            }
+
+            & .modal {
+                transform: translate(-50%, -50%) scale(0.7);
+              }
+        }
+}
+
+// MODAL-window
+.modal {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    padding: 5px;
+  
+    background-color: var(--White-color);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--animation);
+  }
+  
+  .modal {
+        width: 100%;
+        max-width: 280px;
+        min-height: 300px;
+       }
+  
+  .modal {
+    &__button {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    &__close {
+        width: 25px;
+        height: 25px;
+        fill: var(--primary-text-color);
+        transition: fill var(--animation);
+
+        &:hover,
+        &:focus {
+            fill: var(--Accent-color);
+        }
+    }
+
+    transition: fill var(--animation);
+  
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+
+  .modal {
+      &__text {
+          font-size: 17px;
+          color: var(--Accent-color);
+          margin-top: 30px;
+          text-align: center;
+
+      }
+  }
+//   .contact-form {
+//     font-size: 12px;
+//     color: var(--secondary-text-color);
+//     margin-top: 5px;
+//   }
+
+.contact-form__input {
+    font-size: 10px;
+    color: var(--secondary-text-color)
+}
+  
+
+
