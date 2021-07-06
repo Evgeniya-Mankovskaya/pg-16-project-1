@@ -7,6 +7,7 @@
   padding-right: 20px;
 }
 .hero {
+    overflow: hidden;
     // max-width: 688px;
     display: flex;
     flex-direction: column;
@@ -107,7 +108,7 @@ display: block;
 }
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 1366px) {
 .hero-container {
 min-width: 1344px;
 }
@@ -150,7 +151,7 @@ max-height: 1316px;
     }
 
     &__picture {
-        right: 0px;
+        right: -200px;
         top: 46px;
     }  
     
