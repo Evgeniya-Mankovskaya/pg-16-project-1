@@ -82,10 +82,11 @@
       display: block;
       width: 120px;
       height: 137px;
-      content: url('../images/program/program-mob.jpg');
+      content: '';
       position: absolute;
       left: 80px;
       top: 30px;
+      background-image: url('../images/program/program-mob.jpg');
       background-size: 120px 137px;
 
       opacity: 0.5;
@@ -93,7 +94,7 @@
       @media (min-device-pixel-ratio: 2) and (max-width: 767px),
         (min-resolution: 192dpi) and (max-width: 767px),
         (min-resolution: 2dppx) and (max-width: 767px) {
-        content: url('../images/program/program-mob@2x.jpg');
+        background-image: url('../images/program/program-mob@2x.jpg');
       }
     }
   }
@@ -176,7 +177,7 @@
       display: block;
       width: 384px;
       height: 280px;
-      content: url('../images/program/program-tab.jpg');
+      background-image: url('../images/program/program-tab.jpg');
       left: 225px;
       top: -60px;
       background-size: 384px 280px;
@@ -184,7 +185,7 @@
       @media (min-device-pixel-ratio: 2) and (min-width: 768px),
         (min-resolution: 192dpi) and (min-width: 768px),
         (min-resolution: 2dppx) and (min-width: 768px) {
-        content: url('../images/program/program-tab@2x.jpg');
+        background-image: url('../images/program/program-tab@2x.jpg');
       }
     }
   }
@@ -192,7 +193,19 @@
 
 @media screen and (min-width: 1366px) {
   .program {
+    position: relative;
     padding: 120px 0 363px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 277px;
+      width: 100%;
+      //bottom: -50px;
+      border-top: 1px solid var(--White-color);
+    }
 
     &__title {
       margin-bottom: 160px;
@@ -210,17 +223,9 @@
 
       &:not(:last-child) {
         margin-right: 30px;
-        /*&::before {
-          content: '';
-          display: block;
-          position: absolute;
-          //Distance between text and border is 20px
-          left: -20px - 6px;
-          top: 20px;
-          width: 1px;
-          bottom: -50px;
-          border-left: 1px solid var(--White-color);
-        }*/
+        &::before {
+          border-left: none;
+        }
       }
     }
 
@@ -236,8 +241,10 @@
       }
 
       &::before {
-        left: 3px;
-        top: -52px;
+        left: 0px;
+        top: -53px;
+        width: 17px;
+        height: 16px;
 
         transform: translate(0, -100%);
       }
@@ -260,21 +267,21 @@
       }
     }
 
-    /*&__skills-item:last-child.program__skills-item_last::after {
+    &__skills-item:last-child.program__skills-item_last::after {
       display: block;
-      width: 384px;
-      height: 280px;
-      content: url('../images/program/program-tab.jpg');
-      left: 225px;
-      top: -60px;
-      background-size: 384px 280px;
+      width: 636px;
+      height: 502px;
+      background-image: url('../images/program/program-pc.jpg');
+      left: -1263px;
+      top: 279px;
+      background-size: 636px 502px;
 
-      @media (min-device-pixel-ratio: 2) and (min-width: 768px),
-        (min-resolution: 192dpi) and (min-width: 768px),
-        (min-resolution: 2dppx) and (min-width: 768px) {
-        content: url('../images/program/program-tab@2x.jpg');
+      @media (min-device-pixel-ratio: 2) and (min-width: 1366px),
+        (min-resolution: 192dpi) and (min-width: 1366px),
+        (min-resolution: 2dppx) and (min-width: 1366px) {
+        background-image: url('../images/program/program-pc@2x.jpg');
       }
-    }*/
+    }
 
     &__skills-label {
       margin-bottom: 10px;
