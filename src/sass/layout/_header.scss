@@ -57,7 +57,7 @@
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 20px 0 20px;
+    padding: 40px 20px 0 20px;
     &__mobile-menu-btn {
         background-color: transparent;
         border: none;
@@ -100,6 +100,7 @@
     .desktop-menu {
     &__thumb {
         display: flex;
+        margin-right: 40px;
     }
     &__button {
         display: flex;
@@ -112,7 +113,11 @@
 
     .header__menu {
         min-width: 768px;
-        margin-bottom: 46px;
+        margin-bottom: 83px;
+    }
+
+    .hero__title {
+        font-size: 26px;
     }
 }
 
