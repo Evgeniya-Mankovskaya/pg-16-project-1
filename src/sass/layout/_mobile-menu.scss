@@ -11,7 +11,6 @@
     pointer-events: none;
 
     &__container {
-        // min-width: 320px;
         position: relative;
        margin-left: auto;
        margin-right: auto;
@@ -71,15 +70,23 @@
         border: none;
         padding: 0;
 
+        
+
     } 
 
     &__close-icon {
-        width: 20px;
-        height: 20px;
-        // fill: var(--White-color);
+        width: 25px;
+        height: 25px;
         fill: var(--White-color);
+        transition: fill var(--animation);
 
+        &:hover,
+        &:focus {
+            fill: var(--Accent-color);
+        }
     }
+
+
 
     &__button {
                 display: block;
@@ -151,11 +158,11 @@
         height: 12px;
         fill: var(--title-text-color);
     
-        transition: fill 250ms var(--timing-function);
+        transition: fill var(--animation);
     
         &:hover,
         &:focus {
-          fill: var(--primary-text-color);
+          fill: var(--Accent-color);
         }
       }
     }
@@ -180,6 +187,8 @@
                     letter-spacing: 0.03em;
                               
                     color: var(--White-color);
+
+                    transition: color var(--animation);
             
                     &:hover,
                     &:focus {
