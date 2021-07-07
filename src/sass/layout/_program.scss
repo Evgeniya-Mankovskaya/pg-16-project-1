@@ -1,5 +1,5 @@
 .program {
-  padding: 50px 0 537px;
+  padding: 50px 0 50px;
 
   background-color: var(--secondary-background-color);
 
@@ -88,6 +88,7 @@
       top: 30px;
       background-image: url('../images/program/program-mob.jpg');
       background-size: 120px 137px;
+      z-index: 1000;
 
       opacity: 0.5;
 
@@ -121,7 +122,7 @@
 
 @media screen and (min-width: 768px) {
   .program {
-    padding: 60px 0 392px;
+    padding: 60px 0 130px;
 
     &__title {
       margin-bottom: 52px;
@@ -194,7 +195,7 @@
 @media screen and (min-width: 1366px) {
   .program {
     position: relative;
-    padding: 120px 0 363px;
+    padding: 120px 0 64px;
 
     &::before {
       content: '';
@@ -275,6 +276,7 @@
       left: -1263px;
       top: 279px;
       background-size: 636px 502px;
+      z-index: 1000;
 
       @media (min-device-pixel-ratio: 2) and (min-width: 1366px),
         (min-resolution: 192dpi) and (min-width: 1366px),
