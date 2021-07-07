@@ -21,8 +21,9 @@
     url(../images/contacts/contacts-mob.jpg);
 
     &__title{
-        display: inline-block;
-        width: 100%;
+        // display: inline-block;
+        width: 280px;
+      
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
@@ -45,7 +46,10 @@
     }
 
     &__heading{
-        display: inline-block;
+        // display: inline-block;
+        width: 280px;
+        margin-left:auto;
+        margin-right: auto;
         font-weight: 600;
         font-size: 12px;
         line-height: 1.25;
@@ -55,6 +59,7 @@
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
+
     }
     &__field{
         display: flex;
@@ -124,8 +129,11 @@
         rgba(47, 48, 58, 0.4)),
     url(../images/contacts/contacts-tab.jpg); 
     
+    &__heading {
+        width: 452px;
+    } 
         &__title{
-        
+        width: 688px;
         font-size: 26px;
         }
         &__btn {
@@ -156,9 +164,13 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
     url(../images/contacts/contacts-pc.jpg);
+
+    &__heading {
+        width: 1090px;
+    } 
     &__title{
         
-        
+        width: 1090px;
         font-size: 46px;
         
     }
