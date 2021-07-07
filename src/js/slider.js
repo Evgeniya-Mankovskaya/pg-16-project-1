@@ -1,1 +1,1 @@
-// $('.your-class').slick();
+$('.reviews__slider').slick();
