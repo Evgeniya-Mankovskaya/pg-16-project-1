@@ -1,3 +1,50 @@
+.test {
+    position: relative;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+    .test {
+        max-width: 320px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .test {
+        max-width: 768px;
+    }
+    
+    .hero__title {
+        padding-top: 176px;
+    }
+
+    .hero__picture {
+        top: 171px;
+        right: 18px;
+    }
+    
+}
+
+@media screen and (min-width: 1366px) {
+    .test {
+        max-width: 1344px;
+    }
+
+    .hero__title {
+        padding-top: 204px;
+    }
+
+    .hero__picture {
+        top: 150px;
+    }
+}
+
 .logo {
     display: block;
     &__thumb {
