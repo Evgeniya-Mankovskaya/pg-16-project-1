@@ -1,3 +1,6 @@
+.guarantee {
+  padding-bottom: 50px;
+}
 .guarantee__title {
   font-weight: 800;
   font-size: 26px;
@@ -9,7 +12,6 @@
 .guarantee__box {
   padding: 20px 30px;
   background: #f1f1f1;
-  margin-bottom: 50px;
 }
 .guarantee__item {
   display: flex;
@@ -58,9 +60,11 @@
   }
 }
 @media screen and (min-width: 1366px) {
+  .guarantee {
+    padding-bottom: 130px;
+  }
   .guarantee__box {
     padding: 50px 112px;
-    margin-bottom: 130px;
   }
   .guarantee__title {
     font-size: 46px;
