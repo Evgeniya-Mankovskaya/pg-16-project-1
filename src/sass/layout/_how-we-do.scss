@@ -1,5 +1,5 @@
 .how-we-do {
-  &__container {
+  &__section {
     padding-top: 50px;
     padding-bottom: 50px;
     @media screen and (min-width: 1336px) {
@@ -35,6 +35,8 @@
   }
   &__item {
     margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     width: 100%;
     transition: var(--animation);
