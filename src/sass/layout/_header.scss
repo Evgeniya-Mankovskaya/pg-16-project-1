@@ -8,9 +8,9 @@
     position: absolute;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 280px) and (max-width: 767px) {
     .test {
-        max-width: 320px;
+        max-width: 480px;
     }
 
 }
@@ -144,11 +144,17 @@
             display: none;
         }
 
-         @media screen and (max-width: 767px) {
+         @media screen and (min-width: 480px) and (max-width: 767px) {
             .header.container {
-                 max-width: 320px;
+                 max-width: 480px;
              }
         }
+
+        // @media screen and (min-width: 480px) and (max-width: 768px) {
+        //     .header.container {
+        //          max-width: 480px;
+        //      }
+        // }
        
 @media screen and (min-width: 768px) {
     .desktop-menu {
@@ -217,6 +223,12 @@
                     }
                 }
 }
+
+// @media screen and (min-width: 480px) {
+//     .header.container {
+//         width: 480;
+//     }
+// }
 
 // BACKDROP
 .backdrop {
