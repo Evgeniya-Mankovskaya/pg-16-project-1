@@ -68,7 +68,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    pointer-events: none;
 
     &__title {
         font-family: var(--font-family);
@@ -121,6 +120,7 @@
         margin-bottom: 55px;
         margin-left: auto;
         margin-right: auto;
+        transition: color, background-color, border, border var(--animation);
 
         &:hover,
         &:focus {
@@ -143,11 +143,11 @@
     }
 }
 
-// @media screen and (max-width: 480px) and (max-width: 767px) {
-//   .hero-container {
-//     max-width: 480px;
-//   }
-// }
+@media screen and (max-width: 480px) and (max-width: 767px) {
+.hero-container {
+    max-width: 480px;
+  }
+}
 
 @media screen and (min-width: 768px) {
 .hero-container {
