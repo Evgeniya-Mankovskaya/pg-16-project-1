@@ -77,27 +77,6 @@
     //Clear margin-bottom in the lastest list item
     margin-bottom: 0;
     position: relative;
-
-    &::after {
-      display: block;
-      width: 120px;
-      height: 137px;
-      content: '';
-      position: absolute;
-      left: 80px;
-      top: 30px;
-      background-image: url('../images/program/program-mob.jpg');
-      background-size: 120px 137px;
-      z-index: 1000;
-
-      opacity: 0.5;
-
-      @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-        (min-resolution: 192dpi) and (max-width: 767px),
-        (min-resolution: 2dppx) and (max-width: 767px) {
-        background-image: url('../images/program/program-mob@2x.jpg');
-      }
-    }
   }
 
   &__skills-label {
@@ -117,6 +96,35 @@
     letter-spacing: 0.08em;
     color: var(--secondary-text-color);
     opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .program__container {
+    position: relative;
+    &::after {
+      display: block;
+      width: 120px;
+      height: 137px;
+      content: '';
+      position: absolute;
+      right: 0px;
+      bottom: -97px;
+      background-image: url('../images/program/program-mob.jpg');
+      background-size: 120px 137px;
+
+      opacity: 0.5;
+
+      @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+        (min-resolution: 192dpi) and (max-width: 767px),
+        (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url('../images/program/program-mob@2x.jpg');
+      }
+
+      @media screen and (min-width: 480px) {
+        right: -80px;
+      }
+    }
   }
 }
 
@@ -175,6 +183,8 @@
     }
 
     &__skills-item:last-child.program__skills-item_last::after {
+      content: '';
+      position: absolute;
       display: block;
       width: 384px;
       height: 280px;
@@ -182,6 +192,8 @@
       left: 225px;
       top: -60px;
       background-size: 384px 280px;
+      z-index: 1000;
+      opacity: 0.5;
 
       @media (min-device-pixel-ratio: 2) and (min-width: 768px),
         (min-resolution: 192dpi) and (min-width: 768px),
