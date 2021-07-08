@@ -6,9 +6,18 @@ $('.reviews__slider').slick({
   asNavFor: '.reviews__slider-2',
 });
 $('.reviews__slider-2').slick({
-  slidesToShow: 3,
+  slidesToShow: 7,
   slidesToScroll: 1,
   asNavFor: '.reviews__slider',
-  centerMode: true,
+  /* centerMode: true, */
   focusOnSelect: true,
+  /* variablewidth: true, */
+  responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 3,
+	      }
+	    },
+    ]
 });
