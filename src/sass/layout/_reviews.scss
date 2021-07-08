@@ -84,12 +84,12 @@
   border: none;
 }
 .slick-next {
-  right: 20px;
+  right: 10px;
   background: url('../images/reviews/arrow-next.svg') 0 0 / 100% no-repeat;
 }
 
 .slick-prev {
-  left: 20px;
+  left: 10px;
   background: url('../images/reviews/arrow-prev.svg') 0 0 / 100% no-repeat;
 }
 
@@ -120,6 +120,7 @@
   }
   .review__img-wrapper {
     padding-top: 40px;
+    padding-left: 40px;
     margin-right: 40px;
     flex-shrink: 0;
   }
@@ -153,5 +154,8 @@
 @media screen and (min-width: 1366px) {
   .reviews {
     margin-bottom: 130px;
+  }
+  .review__img-wrapper {
+    padding-left: 80px;
   }
 }
