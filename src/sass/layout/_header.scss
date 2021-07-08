@@ -9,6 +9,22 @@
     z-index: 80;
 }
 
+.button-up {
+    background: transparent;
+    border: none;
+    position: fixed;
+    top: 400px;
+    right: -260px;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    
+
+    &__icon {
+        fill: #FF6B09;
+    }
+}
+
 @media screen and (min-width: 280px) and (max-width: 767px) {
     .test {
         max-width: 480px;
