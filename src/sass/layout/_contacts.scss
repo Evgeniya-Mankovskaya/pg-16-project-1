@@ -104,7 +104,14 @@
         border-style: none;
         padding: 17px 46px 16px 46px;
         letter-spacing: 0.08em;
-       
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       cursor: pointer;
+
+       &:hover,
+        &:focus {
+            background-color:#FFFFFF ;
+            color: var(--Accent-color);}
     }
 }
 
