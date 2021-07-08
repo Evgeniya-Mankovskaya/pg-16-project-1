@@ -64,8 +64,8 @@
 .mobile-menu {
     &__close-btn {
         position: absolute;
-        top: 16px;
-        right: 22px;
+        top: 5px;
+        right: 20px;
         background: transparent;
         border: none;
         padding: 0;
@@ -205,6 +205,11 @@
 
 @media screen and (min-width: 768px) {
     .mobile-menu{
+        &__close-btn {
+                top: 16px;
+                right: 22px;
+            } 
+    
         &__container {
         max-width: 768px;
         }
