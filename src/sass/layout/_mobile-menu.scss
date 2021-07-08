@@ -21,7 +21,7 @@
 
 .logo-mobile {
     display: block;
-    margin-top: 30px;
+    margin-top: 40px;
     &__thumb {
         display: flex;
         align-items: center;
@@ -64,8 +64,8 @@
 .mobile-menu {
     &__close-btn {
         position: absolute;
-        top: 0;
-        right: 20px;
+        top: 4px;
+        right: 18px;
         background: transparent;
         border: none;
         padding: 0;

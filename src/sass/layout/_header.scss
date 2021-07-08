@@ -125,7 +125,14 @@
                 color: var(--Accent-color);
                 border: 2px solid var(--Accent-color);
                 background-color: var(--White-color);
-                padding: 15px 5px 16px 5px;
+                padding: 15px 10px 16px 10px;
+
+                &:hover,
+                &:focus {
+                    color: var(--White-color);
+                    border: 2px solid var(--White-color);
+                    background-color: var(--Accent-color);
+                }
             }
 
             &__thumb {
