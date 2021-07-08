@@ -9,6 +9,7 @@
 .guarantee__box {
   padding: 20px 30px;
   background: #f1f1f1;
+  margin-bottom: 50px;
 }
 .guarantee__item {
   display: flex;
@@ -30,7 +31,6 @@
   font-size: 12px;
   line-height: 1.167;
   color: #3d3d3d;
-  /* border-left: 1px dashed #b9b9b9; */
   height: 75px;
   padding-left: 28px;
 }
@@ -57,9 +57,10 @@
     padding-left: 32px;
   }
 }
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 1366px) {
   .guarantee__box {
     padding: 50px 112px;
+    margin-bottom: 130px;
   }
   .guarantee__title {
     font-size: 46px;

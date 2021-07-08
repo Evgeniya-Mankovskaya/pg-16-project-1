@@ -9,6 +9,7 @@ $('.reviews__slider-2').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.reviews__slider',
-  centerMode: true,
+  /* centerMode: true, */
   focusOnSelect: true,
+  variablewidth: true,
 });
