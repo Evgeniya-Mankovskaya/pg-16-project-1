@@ -101,15 +101,19 @@
 
 @media screen and (max-width: 767px) {
   .program__container {
+    padding-left: 20px;
+    padding-right: 20px;
     position: relative;
     &::after {
       display: block;
+      background-repeat: no-repeat;
+      z-index: 1000;
       width: 120px;
-      height: 137px;
+      height: 176px;
       content: '';
       position: absolute;
       right: 0px;
-      bottom: -97px;
+      bottom: -135px;
       background-image: url('../images/program/program-mob.jpg');
       background-size: 120px 137px;
 
@@ -282,10 +286,11 @@
 
     &__skills-item:last-child.program__skills-item_last::after {
       display: block;
-      width: 636px;
+      width: 760px;
       height: 502px;
+      background-repeat: no-repeat;
       background-image: url('../images/program/program-pc.jpg');
-      left: -1263px;
+      left: -1250px;
       top: 279px;
       background-size: 636px 502px;
       z-index: 1000;
