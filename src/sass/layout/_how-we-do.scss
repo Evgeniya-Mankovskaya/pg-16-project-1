@@ -2,7 +2,7 @@
   &__section {
     padding-top: 50px;
     padding-bottom: 50px;
-    @media screen and (min-width: 1336px) {
+    @media screen and (min-width: 1366px) {
       padding-top: 130px;
       padding-bottom: 130px;
     }
@@ -19,7 +19,7 @@
     @media screen and (min-width: 768px) {
       font-size: 26px;
     }
-    @media screen and (min-width: 1336px) {
+    @media screen and (min-width: 1366px) {
       font-size: 46px;
       text-align: left;
       margin-bottom: 50px;
@@ -46,7 +46,7 @@
       flex-basis: calc((100% - 40px) / 2);
       margin-left: 20px;
     }
-    @media screen and (min-width: 1336px) {
+    @media screen and (min-width: 1366px) {
       width: 425px;
       flex-basis: calc((100% - 60px) / 3);
       margin-left: 20px;
@@ -69,7 +69,7 @@
     letter-spacing: 0.08em;
     color: var(--secondary-background-color);
   }
-  @media screen and (min-width: 1336px) {
+  @media screen and (min-width: 1366px) {
     font-size: 20px;
     line-height: 1.4;
   }
@@ -86,7 +86,7 @@
       margin-top: 26px;
       margin-bottom: 22px;
     }
-    @media screen and (min-width: 1336px) {
+    @media screen and (min-width: 1366px) {
       margin-top: 16px;
       margin-bottom: 14px;
     }
@@ -101,7 +101,7 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 30px;
-    @media screen and (min-width: 1336px) {
+    @media screen and (min-width: 1366px) {
       font-size: 18px;
       line-height: 1.5;
       padding-left: 30px;
