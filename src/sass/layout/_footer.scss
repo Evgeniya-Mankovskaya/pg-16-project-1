@@ -140,23 +140,20 @@ margin-left: 0;}
   .footer {
     margin: 0 auto;
     
-    padding-top: 95px;
-    padding-bottom: 56px;} 
+    padding-top: 58px;
+  } 
   .footer-cont {
     // width: 100%;
     width: 1366px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 57px;
     justify-content: flex-start;
 
     &:not(:last-child) {
     align-items: flex-start;}
 
-    &__list {
-      margin-top: 18px;
-
-    }
+    
     &__logo {  
       margin-right: 312px;
     }}
